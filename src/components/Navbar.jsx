@@ -1,12 +1,12 @@
 import { motion } from "motion/react"
 import { useState } from "react"
 import { TiThMenu } from "react-icons/ti";
-
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     
     const navItems = [
         { name: "Home", href: "#home" },
+        { name: "About", href: "#about" },
         { name: "Education", href: "#education" },
         { name: "Projects", href: "#projects" },
         { name: "Contact", href: "#contact" }
@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <motion.nav 
-            className="fixed top-0 w-full left-0 z-50 bg-black/20 backdrop-blur-lg border-b  font-['Sour+Gummy']"
+            className="fixed top-0 w-full left-0 z-50 bg-black/20 backdrop-blur-lg border-b"
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -41,7 +41,7 @@ const Navbar = () => {
                             <a 
                                 href={item.href} 
                                 className="relative text-white/90 text-lg font-medium transition-all duration-300 hover:text-white
-                                         after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
+                                         after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 
                                          after:bg-gradient-to-r after:from-purple-800 after:to-pink-500 
                                          after:transition-all after:duration-300 hover:after:w-full
                                          hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.4)]"

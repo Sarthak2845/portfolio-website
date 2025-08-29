@@ -5,8 +5,8 @@ import educationData from "../data/education.js";
 
 export default function EducationSection() {
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 font-['Sour_Gummy']" id="education"> 
-      <div className="max-w-6xl mx-auto">
+    <section className="min-h-screen flex flex-col justify-center items-center px-6 py-20 " id="education"> 
+
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -14,10 +14,12 @@ export default function EducationSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-4">
-            Education
-          </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
+                <h1 className="relative text-white/90 text-4xl sm:text-5xl lg:text-7xl font-medium transition-all duration-300 hover:text-white
+                                         after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 
+                                         after:bg-gradient-to-r after:from-purple-800 after:to-pink-500 
+                                         after:transition-all after:duration-300 hover:after:w-full">
+                    Education
+                </h1>
         </motion.div>
 
         <div className="space-y-8">
@@ -57,7 +59,7 @@ export default function EducationSection() {
                         {edu.degree}
                       </h2>
                       <span className={`inline-block px-3 py-1 text-xs sm:text-sm font-medium 
-                                      bg-gradient-to-r ${edu.gradient} text-white rounded-full shadow-lg`}>
+                                      bg-gradient-to-r ${edu.gradient} text-white rounded-full shadow-lg ml-8`}>
                         {edu.level}
                       </span>
                     </div>
@@ -78,7 +80,7 @@ export default function EducationSection() {
             </motion.div>
           ))}
         </div>
-      </div>
+
     </section>
   );
 }

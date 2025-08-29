@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 font-[Poppins]"
+            className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20"
         >
             <div className="max-w-7xl mx-auto w-full">
                 <motion.div 
@@ -58,33 +58,34 @@ const Home = () => {
                         <ProfilePic/>
                     </motion.div>
                 </motion.div>
-            <motion.div 
-                className="mt-10 flex items-center gap-6"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-            >
-                <a href="https://www.linkedin.com/in/sarthak-rana-897519217/" target="_blank" rel="noopener noreferrer" 
-                   className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
-                    <FaLinkedin size={28}/>
-                </a>
-                <a href="https://github.com/Sarthak2845" target="_blank" rel="noopener noreferrer" 
-                   className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
-                    <FaGithubSquare size={28}/>
-                </a>
-                <a href="https://discord.com/users/873087763690442782" target="_blank" rel="noopener noreferrer" 
-                   className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
-                    <FaDiscord size={28}/>
-                </a>
-                <a href="mailto:rsarthak2845@gmail.com" 
-                   className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
-                    <MdEmail size={28}/>
-                </a>
-                <a href="https://x.com/RSarthak2845" target="_blank" rel="noopener noreferrer" 
-                   className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
-                    <FaSquareXTwitter size={28}/>
-                </a>
-            </motion.div>
+<motion.div 
+    className="mt-10 flex items-center gap-6 justify-center md:justify-start"
+    initial={{ y: 20, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.8, delay: 0.6 }}
+>
+    <a href="https://www.linkedin.com/in/sarthak-rana-897519217/" target="_blank" rel="noopener noreferrer" 
+       className="text-white/70  hover:-translate-y-2 transition-transform duration-300">
+        <FaLinkedin size={28}/>
+    </a>
+    <a href="https://github.com/Sarthak2845" target="_blank" rel="noopener noreferrer" 
+       className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
+        <FaGithubSquare size={28}/>
+    </a>
+    <a href="https://discord.com/users/873087763690442782" target="_blank" rel="noopener noreferrer" 
+       className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
+        <FaDiscord size={28}/>
+    </a>
+    <a href="mailto:rsarthak2845@gmail.com" 
+       className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
+        <MdEmail size={28}/>
+    </a>
+    <a href="https://x.com/RSarthak2845" target="_blank" rel="noopener noreferrer" 
+       className="text-white/70 hover:-translate-y-2 transition-transform duration-300">
+        <FaSquareXTwitter size={28}/>
+    </a>
+</motion.div>
+
             </div>
         </section>
     );
