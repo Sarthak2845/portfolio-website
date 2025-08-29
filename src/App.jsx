@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import './index.css'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
 
 const App = () => {
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  },[])
   return (
-    <div className="bg-gradient-to-r from-purple-900 to-pink-900 min-h-screen flex items-center justify-center flex-col">
-      <h1 className='text-6xl font-bold  mb-8'>This domain belongs to Sarthak Rana</h1>
-      <h2 className='text-3xl font-semibold text-gray-300 bg-[#09090982] px-2 py-4 rounded-lg'>Website Under Construction</h2>
+    <div className='min-h-screen bg-[#000209] overflow-x-hidden'>
+    {loading
+    ? <div className='flex justify-center items-center h-screen'>
+        <div className='loader'></div>
+      </div>
+    : <>
+        <Navbar />
+        <Home/>
+      </>
+    }
     </div>
   )
 }

@@ -1,1 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@400;500;700&display=swap');
 @import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.loader {
+  width: 60px;
+  aspect-ratio: 1;
+  border: 8px solid #000;
+  box-sizing: border-box;
+  background: 
+    radial-gradient(farthest-side,#fff 98%,#0000) top,
+    radial-gradient(farthest-side,#fff 98%,#0000) top,
+    radial-gradient(farthest-side,#fff 98%,#0000) left,
+    radial-gradient(farthest-side,#fff 98%,#0000) right,
+    radial-gradient(farthest-side,#fff 98%,#0000) bottom,
+    #000;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  filter: blur(3px) contrast(10); 
+  animation: l19 2s infinite;
+}
+
+@media (min-width: 640px) {
+  .loader {
+    width: 80px;
+    border: 10px solid #000;
+    background-size: 20px 20px;
+    filter: blur(4px) contrast(10);
+  }
+}
+
+@keyframes l19 {
+  0%   {background-position:top,top,left,right,bottom}
+  25%  {background-position:right,top,left,right,bottom}
+  50%  {background-position:bottom,top,left,right,bottom}
+  75%  {background-position:left,top,left,right,bottom}
+  100% {background-position:top,top,left,right,bottom}
+}
