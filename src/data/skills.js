@@ -10,6 +10,7 @@ const frontEndSkills = [
                         {name:"Astro", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg"},
                         {name:"Svelte", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg"},
                         {name:"Godot", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"},
+                        {name:"Framer Motion", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg"},
                     ]
 const backEndSkills = [
                         { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
@@ -22,6 +23,7 @@ const backEndSkills = [
                         {name:"Discord.js", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discordjs/discordjs-original.svg"},
                         {name:"Supabase", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"},
                         {name:"Socket.io", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg"},
+                        {name:"Oauth", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg"},
 ]
 const otherSkills = [
                         { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },

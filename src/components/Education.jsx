@@ -54,15 +54,19 @@ export default function EducationSection() {
                   </div>
 
                   <div className="flex-1 text-center sm:text-left">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                      <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-0">
-                        {edu.degree}
-                      </h2>
-                      <span className={`inline-block px-3 py-1 text-xs sm:text-sm font-medium 
-                                      bg-gradient-to-r ${edu.gradient} text-white rounded-full shadow-lg ml-8`}>
-                        {edu.level}
-                      </span>
-                    </div>
+<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
+  <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-0">
+    {edu.degree}
+  </h2>
+  <span
+    className={`px-3 py-1 text-xs sm:text-sm md:text-base font-medium 
+                bg-gradient-to-r ${edu.gradient} text-white 
+                rounded-full shadow-lg`}
+  >
+    {edu.level}
+  </span>
+</div>
+
                     
                     <p className="text-base sm:text-lg text-slate-300 mb-2 leading-relaxed">
                       {edu.institution}

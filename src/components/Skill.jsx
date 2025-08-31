@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import SpotlightCard from "./SpotlightCard"
+import SpotlightCard from "./sub-components/SpotlightCard"
 import { FaPaintBrush, FaServer, FaTools } from "react-icons/fa"
 import { frontEndSkills, backEndSkills, otherSkills } from "../data/skills"
 

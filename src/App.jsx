@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Education from './components/Education'
 import About from './components/About'
 import Skill from './components/Skill'
+import Projects from './components/Projects'
 
 const App = () => {
   const [loading, setLoading] = useState(false)
@@ -26,6 +27,7 @@ const App = () => {
         <About/>
         <Education/>
         <Skill/>
+        <Projects/>
       </>
     }
     </div>

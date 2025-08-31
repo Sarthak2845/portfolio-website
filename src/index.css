@@ -47,3 +47,34 @@ body {
   75%  {background-position:left,top,left,right,bottom}
   100% {background-position:top,top,left,right,bottom}
 }
+
+@keyframes borderGlow {
+  0%, 100% {
+    border-color: rgba(168, 85, 247, 0.3);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+  }
+  25% {
+    border-color: rgba(236, 72, 153, 0.4);
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.3);
+  }
+  50% {
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+  }
+  75% {
+    border-color: rgba(34, 197, 94, 0.4);
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.3);
+  }
+}
+
+.animated-border {
+  animation: borderGlow 4s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.animated-border:hover {
+  animation-duration: 2s;
+  transform: translateY(-2px);
+}
+
+
