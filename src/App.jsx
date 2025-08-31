@@ -6,6 +6,7 @@ import Education from './components/Education'
 import About from './components/About'
 import Skill from './components/Skill'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 const App = () => {
   const [loading, setLoading] = useState(false)
@@ -28,6 +29,7 @@ const App = () => {
         <Education/>
         <Skill/>
         <Projects/>
+        <Contact/>
       </>
     }
     </div>

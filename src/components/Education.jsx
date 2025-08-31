@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react"
 import { MdDateRange } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa";
 import educationData from "../data/education.js";
