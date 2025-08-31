@@ -61,35 +61,35 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <motion.div
-                className="md:hidden overflow-hidden bg-black/30 backdrop-blur-lg border-t border-white/10"
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ 
-                    height: isOpen ? "auto" : 0, 
-                    opacity: isOpen ? 1 : 0 
-                }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-            >
-                <ul className="px-6 py-4 space-y-4">
-                    {navItems.map((item, index) => (
-                        <motion.li 
-                            key={item.name}
-                            initial={{ x: -20, opacity: 0 }}
-                            animate={isOpen ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }}
-                            transition={{ duration: 0.3, delay: index * 0.1 }}
-                        >
-                            <a 
-                                href={item.href}
-                                className="block text-white/90 text-lg font-medium py-2 transition-all duration-300 hover:text-white hover:pl-2
-                                         hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.4)]"
-                                onClick={() => setIsOpen(false)}
+            {isOpen && (
+                <motion.div
+                    className="md:hidden bg-black/30 backdrop-blur-lg border-t border-white/10"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    <ul className="px-6 py-4 space-y-4">
+                        {navItems.map((item, index) => (
+                            <motion.li 
+                                key={item.name}
+                                initial={{ x: -20, opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.3, delay: index * 0.1 }}
                             >
-                                {item.name}
-                            </a>
-                        </motion.li>
-                    ))}
-                </ul>
-            </motion.div>
+                                <a 
+                                    href={item.href}
+                                    className="block text-white/90 text-lg font-medium py-2 transition-all duration-300 hover:text-white hover:pl-2
+                                             hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.4)]"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {item.name}
+                                </a>
+                            </motion.li>
+                        ))}
+                    </ul>
+                </motion.div>
+            )}
         </motion.nav>
     )
 }
