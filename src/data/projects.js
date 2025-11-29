@@ -60,6 +60,20 @@ const projects = [
         githubLink: "https://github.com/Sarthak2845/StargazeX",
         liveLink: "https://stargazex.netlify.app/",
     },
+    {
+        title: "BloomBuddy – AI-Powered Plant Alchemist",
+        description:
+            "A cross-platform mobile app for AI-driven plant identification, personalized care, and sustainable gardening, built with React Native (Expo Router), Firebase, and PlantNet API.",
+        skills: [
+            frontEndSkills.find(s => s.name === "React Native"), 
+            frontEndSkills.find(s => s.name === "Expo"),         
+            frontEndSkills.find(s => s.name === "TypeScript"),   
+            backEndSkills.find(s => s.name === "Firebase"),
+        ],
+        previewImg: "/images/bloombuddy.png", 
+        githubLink: "https://github.com/Sarthak2845/BloomBuddy", 
+        liveLink: "https://expo.dev/accounts/avinash_shetty1/projects/BloomFrontend/builds/50f4da4c-4111-404e-8305-88dc98417d76", 
+    },
 ];
 
 export default projects;

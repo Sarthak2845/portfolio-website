@@ -11,6 +11,8 @@ const frontEndSkills = [
                         {name:"Svelte", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg"},
                         {name:"Godot", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"},
                         {name:"Framer Motion", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg"},
+                        {name:"React Native", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg"},
+                        {name:"Expo", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original-wordmark.svg"},
                     ]
 const backEndSkills = [
                         { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },

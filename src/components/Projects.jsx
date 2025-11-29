@@ -6,12 +6,14 @@ import atlasifyImg from '../images/atlasify.png'
 import atmosMonitorImg from '../images/atmos-monitor.png'
 import mindMetricsImg from '../images/mind-metrics.png'
 import stargazexImg from '../images/stargazex.png'
+import bloombuddyImg from '../images/bloombuddy.png'
 
 const getProjectImage = (title) => {
     if (title.includes('Atlasify')) return atlasifyImg
     if (title.includes('Atmos Monitor')) return atmosMonitorImg
     if (title.includes('Mind Metrics')) return mindMetricsImg
     if (title.includes('StargazeX')) return stargazexImg
+    if (title.includes('BloomBuddy')) return bloombuddyImg
     return null
 }
 

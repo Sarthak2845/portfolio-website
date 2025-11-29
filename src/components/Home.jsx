@@ -6,7 +6,7 @@ import ProfilePic from "./sub-components/ProfilePic";
 import TextType from "./sub-components/Text";
 import { motion } from "motion/react"
 import Button from "./sub-components/Button";
-import pdf from '../assets/SarthakRana.pdf';
+import pdf from '../assets/Sarthak Abhijit Rana.pdf';
 const Home = () => {
     return (
         <section
