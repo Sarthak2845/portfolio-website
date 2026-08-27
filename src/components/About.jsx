@@ -1,23 +1,38 @@
 import { motion } from "motion/react"
+import projects from "../data/projects.js"
+
 const About = () => {
   return (
-    <section id="about" className="min-h-screen flex flex-col justify-center items-center px-6 py-20">
+    <section id="about" className="relative min-h-screen flex flex-col justify-center items-center px-6 py-20 overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+            <div className="absolute top-10 right-1/4 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl" />
+        </div>
+
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          <p className="font-mono text-purple-400 text-sm sm:text-base tracking-widest mb-3">// about.js</p>
           <h1 className="relative text-white/90 text-4xl sm:text-5xl lg:text-7xl font-medium transition-all duration-300 hover:text-white
-                                         after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 
-                                         after:bg-gradient-to-r after:from-purple-800 after:to-pink-500 
+                                         after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0
+                                         after:bg-gradient-to-r after:from-purple-800 after:to-pink-500
                                          after:transition-all after:duration-300 hover:after:w-full">
             About Me
           </h1>
         </motion.div>
 
-<p className="text-white/80 leading-relaxed text-2xl sm:text-3xl lg:text-4xl">
+        <motion.div
+          className="w-full max-w-4xl animated-border rounded-2xl border border-white/10 bg-[#080a10]/70 backdrop-blur-lg p-6 sm:p-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+        <p className="font-mono text-xs sm:text-sm text-white/30 mb-4">/** bio.md */</p>
+<p className="text-white/80 leading-relaxed text-xl sm:text-2xl lg:text-3xl">
   I'm a curious{" "}
   <span className="relative inline-block text-blue-500 font-semibold transition-all duration-300 hover:text-white
     after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0
@@ -117,10 +132,31 @@ const About = () => {
   </span>
   . I have a fast learning curve, logical thinking, and the ability to break down complex problems into effective, real-world solutions. I thrive in collaborative environments and constantly seek opportunities to innovate, improve, and push the boundaries of technology.
 </p>
+        </motion.div>
+
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-4xl mt-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          {[
+            { label: "currently", value: "Automation Intern" },
+            { label: "shipping", value: `${projects.length}+ Projects` },
+            { label: "studying", value: "B.E. Computer Engg." },
+          ].map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-xl border border-white/10 bg-white/5 px-5 py-4 text-center hover:border-cyan-400/40 transition-all duration-300"
+            >
+              <p className="font-mono text-[11px] uppercase tracking-widest text-cyan-400/80">// {stat.label}</p>
+              <p className="text-white/90 font-semibold mt-1 text-sm sm:text-base">{stat.value}</p>
+            </div>
+          ))}
+        </motion.div>
     </section>
   )
 }
 
 export default About
-
-      // I'm curious Software Engineering student with a robust foundation in C++, Python, JavaScript, TypeScript, NodeJs, React and NextJs.I am Strongly inclined towards building intelligent systems with a focus on full-stack development, artificial intelligence, machine learning, and computer vision.I have a fast learning curve, logical thinking, and the ability to break down complex problems into effective, real-world solutions.I Thrive in collaborative environments and constantly seek opportunities to innovate, improve, and push the boundaries of technology.
