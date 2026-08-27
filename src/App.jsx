@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Education from './components/Education'
 import About from './components/About'
+import Experience from './components/Experience'
 import Skill from './components/Skill'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
@@ -26,6 +27,7 @@ const App = () => {
         <Navbar/>
         <Home/>
         <About/>
+        <Experience/>
         <Education/>
         <Skill/>
         <Projects/>
