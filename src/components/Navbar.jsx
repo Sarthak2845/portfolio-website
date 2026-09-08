@@ -18,7 +18,7 @@ const Navbar = () => {
             className="fixed top-0 w-full left-0 z-50 bg-black/20 backdrop-blur-lg border-b"
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
             <div className="mx-auto flex items-center justify-between px-6 py-4 max-w-7xl">
                 {/* Logo */}
@@ -37,7 +37,7 @@ const Navbar = () => {
                             key={item.name}
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            transition={{ duration: 0.6, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
                         >
                             <a 
                                 href={item.href} 
@@ -68,7 +68,7 @@ const Navbar = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                 >
                     <ul className="px-6 py-4 space-y-4">
                         {navItems.map((item, index) => (
@@ -76,7 +76,7 @@ const Navbar = () => {
                                 key={item.name}
                                 initial={{ x: -20, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
-                                transition={{ duration: 0.3, delay: index * 0.1 }}
+                                transition={{ duration: 0.4, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
                             >
                                 <a 
                                     href={item.href}
