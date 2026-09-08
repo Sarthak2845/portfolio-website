@@ -32,13 +32,13 @@ const Home = () => {
                     className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 >
                     <motion.div
                         className="flex-1 text-center lg:text-left order-2 lg:order-1"
                         initial={{ x: -50, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
+                        transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                     >
                         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 font-mono text-xs sm:text-sm text-cyan-300 mb-6">
                             <span className="relative flex h-2 w-2">
@@ -76,7 +76,7 @@ const Home = () => {
                         className="flex-shrink-0 order-1 lg:order-2"
                         initial={{ x: 50, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
+                        transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
                     >
                         <ProfilePic/>
                     </motion.div>
@@ -85,7 +85,7 @@ const Home = () => {
   className="mt-10 flex flex-col items-center gap-4 md:flex-row md:justify-start md:gap-6"
   initial={{ y: 20, opacity: 0 }}
   animate={{ y: 0, opacity: 1 }}
-  transition={{ duration: 0.8, delay: 0.6 }}
+  transition={{ duration: 0.9, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
 >
   {/* Icons Row */}
   <div className="flex items-center justify-center gap-3 sm:gap-4">

@@ -11,7 +11,7 @@ const Skill = () => {
                 className="text-center mb-16"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
                 viewport={{ once: true }}
             >
                 <h1 className="relative text-white/90 text-4xl sm:text-5xl lg:text-7xl font-medium transition-all duration-300 hover:text-white
