@@ -27,7 +27,7 @@ const Projects = () => {
                     className="text-center mb-16"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
                     viewport={{ once: true }}
                 >
                     <p className="font-mono text-purple-400 text-sm sm:text-base tracking-widest mb-3">// featured_projects</p>
@@ -45,7 +45,7 @@ const Projects = () => {
                             className="group relative"
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
+                            transition={{ duration: 0.7, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                             viewport={{ once: true }}
                         >
                             <div className="animated-border bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">

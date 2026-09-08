@@ -11,7 +11,7 @@ export default function EducationSection() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
         >
                 <p className="font-mono text-purple-400 text-sm sm:text-base tracking-widest mb-3">// education.log</p>
@@ -33,7 +33,7 @@ export default function EducationSection() {
               className="group relative"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
+              transition={{ duration: 0.7, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
               viewport={{ once: true }}
             >
               <div
