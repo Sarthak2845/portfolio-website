@@ -8,7 +8,7 @@ const Experience = () => {
         className="text-center mb-16"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
         viewport={{ once: true }}
       >
         <h1 className="relative text-white/90 text-4xl sm:text-5xl lg:text-7xl font-medium transition-all duration-300 hover:text-white
@@ -25,7 +25,7 @@ const Experience = () => {
             key={exp.id}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.15 }}
+            transition={{ duration: 0.7, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
             viewport={{ once: true }}
           >
             <div className="animated-border rounded-2xl overflow-hidden border border-white/10 bg-[#080a10]/80 backdrop-blur-lg shadow-2xl">

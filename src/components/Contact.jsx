@@ -44,7 +44,7 @@ export default function ContactSection() {
         className="text-center mb-16"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
         viewport={{ once: true }}
       >
         <p className="font-mono text-purple-400 text-sm sm:text-base tracking-widest mb-3">// let's connect</p>
@@ -60,7 +60,7 @@ export default function ContactSection() {
         className="w-full max-w-2xl"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         viewport={{ once: true }}
       >
         <div className="animated-border rounded-2xl overflow-hidden border border-white/10 bg-[#080a10]/80 backdrop-blur-lg shadow-2xl">
@@ -82,7 +82,7 @@ export default function ContactSection() {
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
                 viewport={{ once: true }}
                 className="group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 py-4 first:pt-0 last:pb-0 hover:pl-2 transition-all duration-300"
               >
